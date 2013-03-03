@@ -18,7 +18,7 @@ FILTERS = ['Markdown', ]
 VIEWS = {
 
     '/pr_rus/': {'filters': 'summarize', 'view': 'index',
-          'pagination': '/page/:num/'},
+          'pagination': '/pr_rus/page/:num/'},
 
 
 
@@ -26,7 +26,7 @@ VIEWS = {
 
 
     '/pr_rus/tag/:name/': {'filters': 'summarize', 'view':'tag',
-                    'pagination': '/tag/:name/:num/'},
+                    'pagination': '/pr_rus/tag/:name/:num/'},
 
     # # per tag Atom or RSS feed. Just uncomment to generate them.
     # '/tag/:name/atom/': {'filters': ['h2', 'nohyphenate'], 'view': 'atompertag'},
