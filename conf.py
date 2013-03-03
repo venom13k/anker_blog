@@ -17,24 +17,24 @@ FILTERS = ['Markdown', ]
 
 VIEWS = {
 
-    '/NEWS_ru/': {'filters': 'summarize', 'view': 'index',
+    '/pr_rus/': {'filters': 'summarize', 'view': 'index',
           'pagination': '/page/:num/'},
 
 
 
-    '/NEWS_ru/:year/:slug/': {'views': ['entry', 'draft']},
+    '/pr_rus/:year/:slug/': {'views': ['entry', 'draft']},
 
 
-    '/NEWS_ru/tag/:name/': {'filters': 'summarize', 'view':'tag',
+    '/pr_rus/tag/:name/': {'filters': 'summarize', 'view':'tag',
                     'pagination': '/tag/:name/:num/'},
 
     # # per tag Atom or RSS feed. Just uncomment to generate them.
     # '/tag/:name/atom/': {'filters': ['h2', 'nohyphenate'], 'view': 'atompertag'},
     # '/tag/:name/rss/': {'filters': ['h2', 'nohyphenate'], 'view': 'rsspertag'},
 
-    '/NEWS_ru/articles/': {'view': 'archive', 'template': 'articles.html'},
+    '/pr_rus/articles/': {'view': 'archive', 'template': 'articles.html'},
 
-    '/NEWS_ru/sitemap.xml': {'view': 'sitemap'},
+    '/pr_rus/sitemap.xml': {'view': 'sitemap'},
 
 
 
