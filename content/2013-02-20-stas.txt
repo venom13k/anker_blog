@@ -1,0 +1,10 @@
+---
+title: Stas
+date: 21.02.2013
+filter: Markdown
+---
+
+* ffdssss
+* Привет.
+* ппааппа
+

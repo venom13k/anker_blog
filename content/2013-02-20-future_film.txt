@@ -1,0 +1,11 @@
+---
+title: Надо посмотреть
+date: 26.02.2013
+filter: [Markdown]
+---
+
+* Убить священника(To Kill A Priest / Le Complot) - 1988
+* Неглубокая могила(Shallow Grave) - 1994
+* Лектор - 2012
+* Судный день(Doomsday) - 2008
+
