@@ -8,18 +8,15 @@
     {% for year in env.globals.entrylist | archivesfor %}
         {% for month in year %}
             <tr>
-            {% if loop.first %}
-                <th>{{ year ~ ' ' ~ month.full }}</th>
-            {% else %}
-                <th>{{ month.full }}</th>
-            {% endif %}
-            <td></td>
+
+                <th>{{ year }}</th>
+         
             </tr>
 
             {% for entry in month.items %}
                 <tr>
-                    <th>{{ entry.date.day }}</th>
-                    <td><a href="{{ entry.permalink }}">{{ entry.title | e }}</a></td>
+                    <th align=left valign=top><font size=2>{{ month.full ~ ',' ~ entry.date.day }}-е</th>
+                    <tr><td><a href="{{ entry.permalink }}"><font size=2><font color="102152">{{ entry.title | e }}</a></td></tr>
                 </tr>
             {% endfor %}
         {% endfor %}
