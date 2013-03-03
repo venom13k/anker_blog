@@ -8,9 +8,9 @@
     {% for year in env.globals.entrylist | archivesfor %}
         {% for month in year %}
             <tr>
-
+		{% if loop.first %}
                 <th>{{ year }}</th>
-         
+         	{% endif %}
             </tr>
 
             {% for entry in month.items %}
