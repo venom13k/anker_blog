@@ -11,8 +11,12 @@ EMAIL = 'venom@anker.ru'
 ENCODING = 'utf-8'
 
 #FILTERS = ['Markdown', 'markdown+codehilite(css_class=highlight)', 'hyphenate', 'h1']
-FILTERS = ['Markdown', ]
+FILTERS = ['Markdown']
 
+
+
+INTRO_LINK = '<span>&#8230;<a href="%s" class="continue"> читать далее </a>.</span>'
+SUMMARIZE_LINK ='<span>&#8230;<a href="%s" class="continue"> читать далее </a>.</span>'
 
 
 VIEWS = {
@@ -57,8 +61,7 @@ VIEWS = {
     # # translations!
     # '/:year/:slug/:lang/': {'view': 'translation'}
 }
-INTRO_LINK = '<span>&#8230;<a href="%s" class="continue">{{ Читать далее }}</a>.</span>'
-SUMMARIZE_LINK ='<span>&#8230;<a href="%s" class="continue">{{ Читать далее }}</a>.</span>'
+
 
 THEME = 'theme'
 ENGINE = 'acrylamid.templates.jinja2.Environment'
