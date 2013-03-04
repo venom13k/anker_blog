@@ -57,6 +57,8 @@ VIEWS = {
     # # translations!
     # '/:year/:slug/:lang/': {'view': 'translation'}
 }
+INTRO_LINK = '<span>&#8230;<a href="%s" class="continue">{{ Читать далее }}</a>.</span>'
+SUMMARIZE_LINK ='<span>&#8230;<a href="%s" class="continue">{{ Читать далее }}</a>.</span>'
 
 THEME = 'theme'
 ENGINE = 'acrylamid.templates.jinja2.Environment'

@@ -25,7 +25,7 @@
 <td width="200" align="left">
     {% if env.next is not none %}
         <a href="{{ env.path ~ env.next ~ '/' }}" class="page floatleft">
-        &laquo; {{ env.next.title }}
+        &laquo; <font size=2>{{ env.next.title }}</font>
         </a>
     {%- endif  %}
 </td>
@@ -33,7 +33,7 @@
 <td width="200" align="right">
     {% if env.prev is not none %}
         <a href="{{ env.path ~ env.prev ~ '/' }}" class="page floatright">
-        {{ env.prev.title }} &raquo;
+        <font size=2>{{ env.prev.title }}</font> &raquo;
         </a>
     {% endif %}
 </td>
