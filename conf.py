@@ -11,18 +11,14 @@ EMAIL = 'venom@anker.ru'
 ENCODING = 'utf-8'
 
 #FILTERS = ['Markdown', 'markdown+codehilite(css_class=highlight)', 'hyphenate', 'h1']
-FILTERS = ['Markdown']
+FILTERS = ['Markdown', ]
 
-
-
-INTRO_LINK = '<span>&#8230;<a href="%s" class="continue"> читать далее </a>.</span>'
-SUMMARIZE_LINK ='<span>&#8230;<a href="%s" class="continue"> читать далее </a>.</span>'
 
 
 VIEWS = {
 
-    '/pr_rus/': {'filters': 'summarize', 'view': 'index',
-          'pagination': '/pr_rus/page/:num/'},
+    '/pr_rus/': {'view': 'index',
+          'pagination': '/pr_rus/page/:num/', 'items_per_page': 1},
 
 
 
@@ -61,7 +57,6 @@ VIEWS = {
     # # translations!
     # '/:year/:slug/:lang/': {'view': 'translation'}
 }
-
 
 THEME = 'theme'
 ENGINE = 'acrylamid.templates.jinja2.Environment'
