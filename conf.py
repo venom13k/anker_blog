@@ -17,8 +17,8 @@ FILTERS = ['Markdown', ]
 
 VIEWS = {
 
-    '/pr_rus/': {'filters': 'summarize', 'view': 'index',
-          'pagination': '/pr_rus/page/:num/'},
+    '/pr_rus/': {'view': 'index',
+          'pagination': '/pr_rus/page/:num/', 'items_per_page': 1},
 
 
 

@@ -35,13 +35,8 @@
   <td valign=top width=425>
 
 
-  <header>
 
-    <h1><a href="{{ env.path + '/pr_rus/' }}" rel="home start" class="blogtitle"><font size=4>{{ conf.sitename }}</a></h1>
 
-  </header>
-
-    <a href="{{ env.path + '/pr_rus/articles/' }}" rel="contents"><p align='center'><font size=2><b>Архив новостей</b></font></p></a></li>
 <font size=2>
 <p><font color="013220">
   {%- block content -%}
@@ -49,7 +44,8 @@
   
   <footer>
     {% block footer %}
-    <a href="{{ env.path + '/pr_rus/articles/' }}" rel="contents"><p align='center'><font size=2><b>Архив новостей</b></font></p></a></li>
+    <a href="{{ env.path + '/pr_rus/articles/' }}" rel="contents"><p align='center'><font color='#102152' font size=2><b>Архив новостей</b></font></p></a></li>
+<a href="{{ env.path + '/pr_rus/' }}" rel="home start" class="blogtitle"><p align='center'><font size=2 font color='#102152'>{{ "Перейти на последнюю новость " }}</p></a>
     {% endblock %}
   </footer>
   </td>

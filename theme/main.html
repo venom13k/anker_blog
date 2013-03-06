@@ -24,16 +24,16 @@
 <tr>
 <td width="200" align="left">
     {% if env.next is not none %}
-        <a href="{{ env.path ~ env.next ~ '/' }}" class="page floatleft">
-        &laquo; <font size=2>{{ env.next.title }}</font>
+        <a href="{{ env.path ~ env.next}}" class="page floatleft">
+        &laquo; <font color='#102152' font size=2>{{ "Следующая новость" }}</font>
         </a>
     {%- endif  %}
 </td>
 
 <td width="200" align="right">
     {% if env.prev is not none %}
-        <a href="{{ env.path ~ env.prev ~ '/' }}" class="page floatright">
-        <font size=2>{{ env.prev.title }}</font> &raquo;
+        <a href="{{ env.path ~ env.prev }}" class="page floatright">
+        <font color='#102152' font size=2>{{ "Предыдущая новость" }}</font> &raquo;
         </a>
     {% endif %}
 </td>
